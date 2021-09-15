@@ -1,1 +1,1 @@
-# Statistique-Math-matique
+# Statistique-Mathématique
