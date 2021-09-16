@@ -70,3 +70,15 @@ E_x33
 
 vx=E_x33 - E_x3^2
 vx
+
+#############################
+#     Exercice 5
+#############################
+
+install.packages("devtools")
+devtools::install_github("alexandernel14/MGF",force = T)
+MGF::mgf("Exponential")
+
+# espérance mathématique pour lambda=2
+
+MGF::MGF_evaluator("Exponential", t=0, order_of_moment = 1, lambda=2)
