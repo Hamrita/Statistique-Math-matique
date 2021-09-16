@@ -82,3 +82,37 @@ MGF::mgf("Exponential")
 # espérance mathématique pour lambda=2
 
 MGF::MGF_evaluator("Exponential", t=0, order_of_moment = 1, lambda=2)
+
+
+################################
+#    Changement de variable
+###############################
+
+# définissons la fonction de densité
+
+ff =function(x) ifelse(x >=-1 & x<=1, 0.25+0.75*x^2,0)
+
+# courbe de f
+
+curve(ff, -1,1, lwd=3, col=2, xlab="", ylab=expression(f(x)))
+
+# Y=2X+1
+
+gg=function(x) ifelse(x<=3 & x>=-1, 1/8+3/8*((x-1)/2)^2,0)
+
+# vérifions qu'il s'agit bien d'une densité
+
+integrate(gg,-1,3)$value
+
+par(mfrow=c(1,2))
+curve(ff, -1,1, lwd=3, col=2, xlab="", ylab=expression(f(x)))
+curve(gg, -1,3, lwd=3, col=2, xlab="", ylab=expression(g(x)))
+
+# Y=X^2
+
+gg2=function(x) ifelse(x<=1 & x>0, (1+3*x)/(4*sqrt(x)),0)
+
+integrate(gg2,-1,3)$value
+
+curve(gg2, 0.05,1, lwd=3, col=2, xlab="", ylab=expression(g(x)))
+
