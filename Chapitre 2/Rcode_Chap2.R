@@ -4,7 +4,7 @@
 
 # Loi de Bernoulli
 
-# génération de 100 réalisation B(1,0.4)
+# génération de 100 réalisations B(1,0.4)
 X=rbinom(100,1,0.4)
 x[1:10]
 
@@ -15,7 +15,7 @@ plot(-1:2, pbinom(-1:2, size = 1, prob = 0.4), type="s",lwd=3, xlab="",
 
 # Loi binômiale
 
-# génération de 100 réalisation B(10,0.4)
+# génération de 100 réalisations B(10,0.4)
 X=rbinom(100,10,0.4)
 x[1:10]
 
@@ -26,7 +26,7 @@ plot(-1:10, pbinom(-1:10, size = 10, prob = 0.4), type="s",lwd=3, xlab="",
 
 # loi hypergéométrique
 
-# génération de 100 réalisation B(10,0.4)
+# génération de 100 réalisations B(10,0.4)
 X=rhyper(100,5,12,7)
 x[1:10]
 
