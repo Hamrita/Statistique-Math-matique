@@ -6,7 +6,7 @@
 
 # génération de 100 réalisations B(1,0.4)
 X=rbinom(100,1,0.4)
-x[1:10]
+X[1:10]
 
 # fonction de répartition
 
@@ -17,7 +17,7 @@ plot(-1:2, pbinom(-1:2, size = 1, prob = 0.4), type="s",lwd=3, xlab="",
 
 # génération de 100 réalisations B(10,0.4)
 X=rbinom(100,10,0.4)
-x[1:10]
+X[1:10]
 
 # fonction de répartition
 
@@ -26,14 +26,26 @@ plot(-1:10, pbinom(-1:10, size = 10, prob = 0.4), type="s",lwd=3, xlab="",
 
 # loi hypergéométrique
 
-# génération de 100 réalisations B(10,0.4)
+# génération de 100 réalisations H(Np=5,N=12,n=7)
 X=rhyper(100,5,12,7)
-x[1:10]
+X[1:10]
 
 # fonction de répartition
 
 plot(0:7, phyper(0:7,5,12,7), type="s",lwd=3, xlab="",
      ylab="", col=2, main = "Fonction de répartition de H(Np=5,N=12,n=7)")
+
+# loi géométrique
+
+# génération de 100 réalisations G(p=0.35)
+# Sous R, le support de X est 0,1,2,...
+X=rgeom(100,0.35)+1
+X[1:10]
+
+# fonction de répartition
+
+plot(0:13, pgeom(0:13,0.35), type="s",lwd=3, xlab="",
+     ylab="", col=2, main = "Fonction de répartition de G(p=0.35)")
 
 #################################################
 #     lois usuelles continues
