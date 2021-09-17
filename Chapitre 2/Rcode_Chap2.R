@@ -13,6 +13,28 @@ x[1:10]
 plot(-1:2, pbinom(-1:2, size = 1, prob = 0.4), type="s",lwd=3, xlab="",
      ylab="", col=2, main = "Fonction de répartition de Bin(1,0.4)")
 
+# Loi binômiale
+
+# génération de 100 réalisation B(10,0.4)
+X=rbinom(100,10,0.4)
+x[1:10]
+
+# fonction de répartition
+
+plot(-1:10, pbinom(-1:10, size = 10, prob = 0.4), type="s",lwd=3, xlab="",
+     ylab="", col=2, main = "Fonction de répartition de Bin(10,0.4)")
+
+# loi hypergéométrique
+
+# génération de 100 réalisation B(10,0.4)
+X=rhyper(100,5,12,7)
+x[1:10]
+
+# fonction de répartition
+
+plot(0:7, phyper(0:7,5,12,7), type="s",lwd=3, xlab="",
+     ylab="", col=2, main = "Fonction de répartition de H(Np=5,N=12,n=7)")
+
 #################################################
 #     lois usuelles continues
 ################################################
