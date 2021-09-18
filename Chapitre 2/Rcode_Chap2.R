@@ -42,6 +42,11 @@ plot(0:7, phyper(0:7,5,12,7), type="s",lwd=3, xlab="",
 X=rgeom(100,0.35)+1
 X[1:10]
 
+# La densité
+
+plot(dgeom(0:15,0.35), type="h", lwd=3, xlab="",
+     ylab="", col=2, main = "Fonction de probabilité de G(p=0.35)")
+
 # fonction de répartition
 
 plot(0:13, pgeom(0:13,0.35), type="s",lwd=3, xlab="",
