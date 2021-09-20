@@ -74,6 +74,47 @@ ggplot(data = df, aes(x = x, y = y)) +
   geom_line(size=1.3, color="red") +
   facet_wrap(~dist_name)+theme(plot.title=element_text(size=20,face="bold"))
 
+#################################
+#   Loi normale
+#################################
+
+# Fonction de répartition (loi normale standard)
+
+# P(X <= 1.65)
+
+pnorm(1.65)
+
+# P(X > 1.65)
+
+pnorm(1.65, lower.tail = FALSE)
+
+# ou encore
+
+1-pnorm(1.65)
+
+# P(X<= -1.25)
+
+pnorm(-1.25)
+
+# P(|X| <= 1.65)= 2*phi(1.65)-1
+
+2*pnorm(1.65) - 1
+
+# loi normale quelconque X~N(m,sigma)
+
+# P(X<=2.3)=?  avec X~N(1.5,sigma=0.5)
+
+pnorm(2.3,mean=1.5,sd=0.5)
 
 
+#  Quantiles: q? tel que P(X <= q)=p
+# qnorm(p)
+
+qnorm(0.05, mean=0, sd=1)  # quantile de alpha=5% pour loi normale standard
+
+qnorm(0.95)    # quantile de alpha=95% pour loi normale standard
+
+qnorm(0.05,lower.tail = FALSE)  # quantile de 1-0.05 (loi normale standard)
+
+qnorm(0.95, 2,0.5)  # quantile de 95% pour la loi N(2,0.5)
 
