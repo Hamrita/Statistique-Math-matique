@@ -118,3 +118,16 @@ qnorm(0.05,lower.tail = FALSE)  # quantile de 1-0.05 (loi normale standard)
 
 qnorm(0.95, 2,0.5)  # quantile de 95% pour la loi N(2,0.5)
 
+############################################
+#  Fonction Gamma
+##########################################
+
+# gamma(4)
+
+gamma(4)
+
+# gamma(5/2)
+
+gamma(5/2)
+
+3*sqrt(pi)/4
