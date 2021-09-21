@@ -118,6 +118,20 @@ qnorm(0.05,lower.tail = FALSE)  # quantile de 1-0.05 (loi normale standard)
 
 qnorm(0.95, 2,0.5)  # quantile de 95% pour la loi N(2,0.5)
 
+########################################
+#  Table de la loi normale standard
+#######################################
+x=seq(0,3.5,by=0.1)
+y=seq(0,0.09,by=0.01)
+Tab=outer(x,y,"+")
+Tab=pnorm(Tab)
+colnames(Tab)=as.character(seq(0,0.09,by=0.01))
+rownames(Tab)=as.character(seq(0,3.5,by=0.1))
+
+head(Tab)  # afficher les six premières lignes
+
+Tab["1.6", "0.05"]  # phi(1.65)
+
 ############################################
 #  Fonction Gamma
 ##########################################
@@ -131,3 +145,20 @@ gamma(4)
 gamma(5/2)
 
 3*sqrt(pi)/4
+
+############################################
+#   Loi Gamma
+############################################
+
+alpha=c(1,1.5,3.5); lambda=c(2,2,7); cc=c(4,5)
+xx=seq(0.01,6,len=100)
+plot(xx,dgamma(xx,alpha[1], rate=lambda[1]), col=2, lwd=3,xlab="",
+     ylab="", type="l", xlim=c(0,3),
+     main=expression("Densité de "~ Gamma(alpha,lambda)))
+for(i in 2:3){
+  lines(xx, dgamma(xx,alpha[i],rate=lambda[i]), col=cc[(i-1)], lwd=3)
+}
+legend("topright", c(expression(alpha==1 ~"," ~ lambda==2),
+                   expression(alpha==1.5 ~"," ~ lambda==2),
+                   expression(alpha==3.5 ~"," ~ lambda==7)),bty="n",
+                   lty=1, lwd=3, col=c(2,4,5))
