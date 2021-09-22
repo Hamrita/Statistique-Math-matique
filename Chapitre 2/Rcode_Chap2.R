@@ -178,3 +178,30 @@ legend("topright", c(expression(n==3),
                      expression(n==5),
                      expression(n==7)),bty="n",
        lty=1, lwd=3, col=c(2,4,5))
+
+##############################################
+#   Loi Beta de première espèce
+#############################################
+
+beta1=function(x,p,q){
+  ifelse(x >0, gamma(p+q)/(gamma(p)*gamma(q))*x^{p-1}*(1+x)^{-p-q},0)
+}
+
+xx=seq(0.01,3,len=200)
+pp=c(0.5,1,3/2,4); qq=c(0.5,3,2,5)
+
+plot(xx,beta1(xx,pp[1],qq[1]), xlim=c(0,3), lwd=3, col=1, 
+     type="l", xlab="", ylab="",main=expression("Densité de "~ B[1](p,q)))
+for(i in 2:4){
+  lines(xx,beta1(xx,pp[i], qq[i]), lwd=3, col=i)
+}
+legend("topright", c(expression(p==0.5 ~"," ~q==0.5),
+                     expression(p==1~ "," ~q==3),
+                     expression(p==frac(3,2) ~"," ~q==2),
+                     expression(p==4~ "," ~q==5)),bty="n",
+       lty=1, lwd=3, col=1:4)
+
+######################################################
+#    Loi beta deuxième espèce
+######################################################
+
