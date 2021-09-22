@@ -162,3 +162,19 @@ legend("topright", c(expression(alpha==1 ~"," ~ lambda==2),
                    expression(alpha==1.5 ~"," ~ lambda==2),
                    expression(alpha==3.5 ~"," ~ lambda==7)),bty="n",
                    lty=1, lwd=3, col=c(2,4,5))
+
+##############################################
+#  Loi khi-deux
+#############################################
+nn=c(3,5,7)
+xx=seq(0.01,20,len=100)
+plot(xx,dchisq(xx,nn[1]), col=2, lwd=3,xlab="",
+     ylab="", type="l", xlim=c(0,20),
+     main=expression("Densité de "~ chi^2 ~""~ (n)))
+for(i in 2:3){
+  lines(xx, dchisq(xx,nn[i]), col=cc[(i-1)], lwd=3)
+}
+legend("topright", c(expression(n==3),
+                     expression(n==5),
+                     expression(n==7)),bty="n",
+       lty=1, lwd=3, col=c(2,4,5))
