@@ -190,7 +190,7 @@ beta1=function(x,p,q){
 xx=seq(0.01,3,len=200)
 pp=c(0.5,1,3/2,4); qq=c(0.5,3,2,5)
 
-plot(xx,beta1(xx,pp[1],qq[1]), xlim=c(0,3), lwd=3, col=1, 
+plot(xx,beta1(xx,pp[1],qq[1]), xlim=c(0,2.5),ylim=c(0,1.3), lwd=3, col=1, 
      type="l", xlab="", ylab="",main=expression("Densité de "~ B[1](p,q)))
 for(i in 2:4){
   lines(xx,beta1(xx,pp[i], qq[i]), lwd=3, col=i)
@@ -204,4 +204,19 @@ legend("topright", c(expression(p==0.5 ~"," ~q==0.5),
 ######################################################
 #    Loi beta deuxième espèce
 ######################################################
+
+xx=seq(0.001,1,len=200)
+pp=c(0.5,5,1,2,2); qq=c(0.5,1,3,2,5)
+
+plot(xx,dbeta(xx,pp[1],qq[1]), xlim=c(0,1), ylim=c(0,3),lwd=3, col=1, 
+     type="l", xlab="", ylab="",main=expression("Densité de "~ B[1](p,q)))
+for(i in 2:5){
+  lines(xx,dbeta(xx,pp[i], qq[i]), lwd=3, col=i)
+}
+legend("top", c(expression(p==0.5 ~"," ~q==0.5),
+                     expression(p==5~ "," ~q==1),
+                     expression(p==1 ~"," ~q==3),
+                     expression(p==2~ "," ~q==2),
+                     expression(p==2~ "," ~q==5)),bty="n",
+       lty=1, lwd=3, col=1:4)
 
