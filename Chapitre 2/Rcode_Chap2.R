@@ -220,3 +220,37 @@ legend("top", c(expression(p==0.5 ~"," ~q==0.5),
                      expression(p==2~ "," ~q==5)),bty="n",
        lty=1, lwd=3, col=1:4)
 
+####################################################
+#  Loi de Student
+###################################################
+
+nn=c(1,5,10,Inf)
+xx=seq(-5,5,len=200)
+plot(xx,dt(xx,nn[1]), col=1, lwd=3,xlab="",
+     ylab="", type="l", ylim=c(0,0.4),
+     main=expression("Densité de "~ T(n)))
+for(i in 2:4){
+  lines(xx, dt(xx,nn[i]), col=i, lwd=3)
+}
+legend("topright", c(expression(n==1),
+                     expression(n==5),
+                     expression(n==10),
+                     expression(n==infinity)),bty="n",
+       lty=1, lwd=3, col=1:4)
+
+####################################################
+# Loi de Fisher
+###################################################
+n1=c(1,5,10,100);  n2=c(1,8,4,50)
+xx=seq(0,3,len=200)
+plot(xx,df(xx,n1[1],n2[1]), col=1, lwd=3,xlab="",
+     ylab="", type="l", ylim=c(0,2),
+     main=expression("Densité de "~ F(n[1],n[2])))
+for(i in 2:4){
+  lines(xx, df(xx,n1[i], n2[i]), col=i, lwd=3)
+}
+legend("topright", c(expression(n[1]==1 ~ "," ~n[2]==1),
+                     expression(n[1]==5 ~ "," ~n[2]==8),
+                     expression(n[1]==10 ~ "," ~n[2]==4),
+                     expression(n[1]==100 ~ "," ~n[2]==50)),bty="n",
+       lty=1, lwd=3, col=1:4)
