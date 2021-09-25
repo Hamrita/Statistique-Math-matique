@@ -254,3 +254,5 @@ legend("topright", c(expression(n[1]==1 ~ "," ~n[2]==1),
                      expression(n[1]==10 ~ "," ~n[2]==4),
                      expression(n[1]==100 ~ "," ~n[2]==50)),bty="n",
        lty=1, lwd=3, col=1:4)
+
+
