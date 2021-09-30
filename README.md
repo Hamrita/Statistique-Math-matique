@@ -8,7 +8,7 @@ Chapitre 1: ![Rappels sur les variables aléatoirs](https://github.com/Hamrita/S
 
 Chapitre 2: ![Les lois usuelles](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%202/StatMath_Chap2.pdf)
 
-Chapitre 3: Variables aléatoires simultanées
+Chapitre 3: ![Variables aléatoires simultanées](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%203/StatMath_Chap3.pdf)
 
 Chapitre 4: Convergences et théorèmes limites
 
