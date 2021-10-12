@@ -12,7 +12,7 @@ Chapitre 2: [Les lois usuelles](https://github.com/Hamrita/Statistique-Mathemati
 
 Chapitre 3: [Variables aléatoires simultanées](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%203/StatMath_Chap3.pdf)
 
-Chapitre 4: Convergences et théorèmes limites
+Chapitre 4: [Convergences et théorèmes limites](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%204/StatMath_Chap4.pdf)
 
 Chapitre 5: Estimation
 
