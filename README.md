@@ -2,7 +2,7 @@
 
 Il s'agit du support pédagogique du module statistique mathématique destiné aux étudiants de la première année mastère de recherche Finance & actuariat (IHEC Sousse, Tunisie).
 
-Ce cours comprend 6 chapitre:
+Ce cours comprend 6 chapitres:
 
 Chapitre 1: [Rappels sur les variables aléatoirs](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%201/StatMath_Chap1.pdf)
 
