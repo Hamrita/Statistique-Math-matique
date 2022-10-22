@@ -14,6 +14,6 @@ Chapitre 3: [Variables aléatoires simultanées](https://github.com/Hamrita/Stat
 
 Chapitre 4: [Convergences et théorèmes limites](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%204/StatMath_Chap4.pdf)
 
-Chapitre 5: Estimation
+Chapitre 5: [Estimation](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%205/StatMath_Chap5.pdf)
 
 Chapitre 6: Tests statistiques
