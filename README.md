@@ -16,4 +16,4 @@ Chapitre 4: [Convergences et théorèmes limites](https://github.com/Hamrita/Sta
 
 Chapitre 5: [Estimation](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%205/StatMath_Chap5.pdf)
 
-Chapitre 6: Tests statistiques
+Chapitre 6: [Tests statistiques](https://github.com/Hamrita/Statistique-Mathematique/blob/main/Chapitre%206/StatMath_Chap6.pdf)
